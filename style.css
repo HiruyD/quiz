@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px; /* Curved frame */
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  text-align: center;
+
+  /* Soft Shadow Effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0.2, 0.2); /* Soft, subtle shadow */
+}
+
+/* Input field */
+.container input {
+  width: 100%; /* Full width of the container */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Buttons */
+.container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.container button:hover {
+  background: #0056b3;
+}
+
+/* Spans */
+.container span {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container h1 {
+    width: 100%; /* Make sure it spans full width */
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .container input {
+    flex: 1;
+    min-width: 60%;
+  }
+
+  .container button {
+    flex: 1;
+    min-width: 45%;
+  }
+
+  .container span {
+    width: 100%;
+    text-align: center;
+  }
+}
