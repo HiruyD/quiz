@@ -1,24 +1,46 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
 <html>
   <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External stylesheet and JavaScript file links -->
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>duplicate</title>
   </head>
   <body>
+    <!-- Main wrapper div for centering content -->
     <div class="wrapper">
+      <!-- Container for the main content -->
       <div class="container">
+        <!-- Main heading asking for user input -->
         <h1>how many random numbers do you want to generate?</h1>
+
+        <!-- Number input field for user to enter quantity -->
         <input type="number" id="number" placeholder="Enter Number" />
+
+        <!-- Button to trigger random number generation -->
         <button class="button 1" onclick="generate()">generate random</button>
+
+        <!-- Span to display the generated numbers -->
         <span id="result"></span>
+
+        <!-- Button to find and display duplicate numbers -->
         <button class="button 2" onclick="duplicate()">
           show repeated numbers
         </button>
+
+        <!-- Span to display the duplicate numbers -->
         <span id="duplicate"></span>
       </div>
-      <button class="button3" onclick="clearVal()">clear</button>
+      <div class="container2">
+        <!-- <button class="button4" onclick="sortNum()">sort</button> -->
+        <!-- Clear button to reset all fields -->
+        <button class="button3" onclick="clearVal()">clear</button>
+      </div>
     </div>
   </body>
 </html>

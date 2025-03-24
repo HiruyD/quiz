@@ -62,3 +62,8 @@ function clearVal() {
   document.getElementById("result").textContent = "";
   document.getElementById("duplicate").textContent = "";
 }
+
+function sortNum() {
+  let sortedArray = distinctValues.sort();
+  document.getElementById("duplicate").innerHTML = sortedArray.join(", ");
+}
