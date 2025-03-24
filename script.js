@@ -53,3 +53,12 @@ function duplicate() {
   }
   // Display the duplicate numbers on the webpage, separated by commas
 }
+
+/**
+ * Clears the input field and the result displays on the webpage
+ */
+function clearVal() {
+  document.getElementById("number").value = "";
+  document.getElementById("result").textContent = "";
+  document.getElementById("duplicate").textContent = "";
+}

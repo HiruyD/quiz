@@ -7,15 +7,18 @@
     <title>duplicate</title>
   </head>
   <body>
-    <div class="container">
-      <h1>how many random numbers do you want to generate?</h1>
-      <input type="number" id="number" placeholder="Enter Number" />
-      <button class="button 1" onclick="generate()">generate random</button>
-      <span id="result"></span>
-      <button class="button 2" onclick="duplicate()">
-        show repeated numbers
-      </button>
-      <span id="duplicate"></span>
+    <div class="wrapper">
+      <div class="container">
+        <h1>how many random numbers do you want to generate?</h1>
+        <input type="number" id="number" placeholder="Enter Number" />
+        <button class="button 1" onclick="generate()">generate random</button>
+        <span id="result"></span>
+        <button class="button 2" onclick="duplicate()">
+          show repeated numbers
+        </button>
+        <span id="duplicate"></span>
+      </div>
+      <button class="button3" onclick="clearVal()">clear</button>
     </div>
   </body>
 </html>
